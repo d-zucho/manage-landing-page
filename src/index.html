@@ -8,14 +8,58 @@
     <title>Manage Landing Page</title>
   </head>
   <body>
-    <div class="body__container">
-      <header>
+    
+      <!-- <header class="flex justify-between">
         <div class="header__logo">
           <img src="../images/logo.svg" alt="Manage Logo" />
-        </div>
+        </div> -->
         <!-- Nav Mobile -->
-        <nav class="relative"></nav>
+        <!-- <nav class="relative">
+          <div class="mobile-menu">
+            <img
+              src="../images/icon-hamburger.svg"
+              alt="mobile navigation menu"
+            />
+          </div> -->
+        <header>
+          <!-- Navbar -->
+          <nav class="relative container mx-auto p-6">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <div class="pt-2">
+                <img src="../images/logo.svg" alt="logo">
+              </div>
+
+              <!-- Nav Items  -->
+              <!-- md:flex == on medium screens turn to flex-container -->
+              <div class="hidden md:flex space-x-6 ">
+                <a href="#" class='hover:text-darkGrayishBlue'>Pricing</a>
+                <a href="#" class='hover:text-darkGrayishBlue'>Product</a>
+                <a href="#" class='hover:text-darkGrayishBlue'>About Us</a>
+                <a href="#" class='hover:text-darkGrayishBlue'>Careers</a>
+              </div>
+              <a href="#" class='hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight' >Get Started</a>
+              <div class="md:hidden">
+                <img src="../images/icon-hamburger.svg" alt=" " class='hover:cursor-pointer'>
+              </div>
+            </div> 
+          </nav>
       </header>
+
+      <!-- Hero Section -->
+      <div class="main">
+        <section id="hero">
+          <!-- Flex Conatainer -->
+          <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 md:space-y-0">
+            <!-- Left Flex Child -->
+            <div class='flex flex-col mb-32 space-y-12 md:w-1/2 '>
+              <h1 class='max-w-md text-4xl font-bold text-center md:text-6xl md:text-left'>Bring everyone together to build better products</h1>
+              <p class='max-w-sm text-center text-darkGrayishBlue md:text-left'>Manage makes it simple for software teams to plan day-to=day tasks while keeping the larger team goals in view.</p>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
