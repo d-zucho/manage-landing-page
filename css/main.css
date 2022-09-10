@@ -551,6 +551,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
